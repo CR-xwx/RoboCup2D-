@@ -1,0 +1,814 @@
+/*外页面整体设计*/
+body{
+	font-family: "微软雅黑";
+    /*background: url("../images/background1.jpg") no-repeat;*/
+    background-color:   #DEB887;
+    background-size: 100%;/*背景尺寸*/
+    height: 100%;
+}
+
+hr{
+	width: 80%;
+	border:#003366 1px solid;
+	margin-bottom: 5px;
+}
+/*内页面容器*/
+#container{
+	/*background: url("../images/background1.jpg");*/
+	background-color: #FFEBCD;
+	padding: 10px;
+	margin: auto;
+	width: 1000px;
+	text-align: center;
+	font-size: "微软雅黑";
+	box-shadow: 10px 10px 15px black;
+}
+#header{
+   display: block;
+   width: 1000px;
+   font-weight: bold;
+   padding: 5px;
+   text-align: center;
+}
+/*导航栏部分*/
+.nav{
+	list-style: none;
+	margin-top: 10px;
+	margin-left: 120px;
+	padding: 0;
+}
+.nav li{
+	float: left;
+}
+.nav a:link, a:visited{
+	display: block;
+	width: 120px;
+	font-weight: bold;
+	color: white;
+	background-color: #DEB887;/*原木色*/
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+}
+/*导航栏鼠标选中本色*/
+.nav a:hover, a:active{
+	background-color: #D2691E;
+}
+
+/*内页面-页眉*/
+header {
+    height: 30px;
+    /*background:url(../images/background1.jpg) no-repeat;*/
+    background-color: #FFEBCD;
+    /*text-align: center;*/
+    width: 100%;
+    font-size: 20px;
+    margin-top: -15px;
+}
+.header_a a
+{
+    color:#000;
+    /*text-decoration:none;*/
+    /*margin-left: 600px;*/
+}
+.header_a a:hover
+{
+    color: red;
+} 
+
+/*登录界面*//*开始*/
+.login_content ul{
+    list-style: none;
+}
+.wrapper{
+    width:990px;
+    margin:0 auto;
+}
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+.login_content a{
+    color: #666666;
+}
+.login_content a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/*头部*/
+.header-left{
+    width: 300px;
+    height: 60px;
+    margin: 10px 0px;
+}
+/*图片和文字都写上vertical-align:middle即可实现在一个水平线上*/
+.header-left img{
+    vertical-align: middle;
+}
+.header-left a{
+    vertical-align: middle;
+    font-size: 23px;
+    margin-left: 20px;
+}
+.header-left>a:hover{
+    color: #666666;
+}
+.header-right{
+    margin-top: 50px;
+}
+.header-right img{
+    vertical-align: middle;
+}
+.header-right a{
+    vertical-align: middle;
+    font-size: 12px;
+}
+/*中间内容*/
+.login_content{
+    clear: both;
+    height: 475px;
+    width: 100%;
+    /*background-color: #DCDCDC;*/
+}
+.login_content>.background{
+    margin-top: -800px;
+    height: 0px;
+    /*background: url(../images/login/a1.jpg);*/
+   /* background-color: #FFEBCD;*/
+}
+.login_content>.wrapper>.login-form{
+    background: white;
+    height: 370px;
+    width: 351px;
+    margin: 40px auto;
+    margin-top: 2px;
+}
+
+/*表单下面的登录*/
+.login-tab{
+    height: 54px;
+    line-height: 54px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #f4f4f4;
+}
+.login-tab-left{
+    width:175px;
+}
+.login-tab-left>span{
+    color: #f4f4f4;
+}
+.login-tab-right{
+    width: 175px;
+}
+/*账户登录的内容*/
+.accountNum-login{
+    margin: 80px auto;
+    width: 306px;
+    height: 222px;
+    display: none;
+    /*border: 1px solid red;*/
+}
+#accountNum{
+    border: 1px solid #bdbdbd;
+    height: 38px;
+    width: 300px;
+}
+.login-label{
+    display: inline-block;
+    vertical-align: middle;
+    height: 38px;
+    width: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(../images/MyHome/login/login-icons.png) no-repeat;
+}
+.login-rentou{
+    background-position: 0px 0px;
+}
+.name{
+    vertical-align: middle;
+    width: 234px;
+    /*height: 18px;*/
+    /*line-height: 18px;*/
+    padding: 10px 0px 10px 16px;
+    overflow: hidden;
+    font-size: 14px;
+    border: none;
+}
+#l_password{
+    border: 1px solid #bdbdbd;
+    height: 38px;
+    width: 300px;
+    margin-top: 18px;
+}
+.login-l_password{
+    background-position: -48px -48px;
+}
+.forget{
+    margin-top: 20px;
+    font-size: 14px;
+    margin-right: 2px;
+}
+.signIn{
+    margin-top: 22px;
+    width: 306px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background: #e4393c;
+    border: 1px solid red;
+    color: white;
+    font-size: 20px;
+}
+.signIn:hover{
+    cursor: pointer;
+}
+
+/*密码登陆的内容页*/
+.saoma-login{
+    position: relative;
+    margin: 80px auto;
+    width: 306px;
+    height: 222px;
+    display: block;
+}
+.saoma-login>.saoma-login-top>.erweima{
+    /*position: absolute;*/
+    /*left: 20%;*/
+    background: white;
+    border: 5px solid white;
+    margin-left: 75px;
+    transition: margin-left 0.5s ease;
+    width: 150px;
+    height: 150px;
+}
+.saoma-login>.saoma-login-top>.phone{
+    display: none;
+    margin-top: -5px;
+    margin-left: 158px;
+    position: absolute;
+    width: 150px;
+    height: 160px;
+}
+.saoma-login>.saoma-login-bottom{
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+}
+.saoma-login>.saoma-login-bottom>span{
+    color: #BDBDBD;
+    font-size: 12px;
+}
+.saoma-login>.saoma-login-bottom>span>a{
+    color: red!important;
+}
+.saomiao_bottom{
+    margin: 10px 0px 5px -35px;
+}
+.saomiao_bottom li span{
+    margin-left: 5px;
+}
+.saoma-span{
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../images/MyHome/login/qr-coagent.png) no-repeat;
+    width: 20px;
+    height: 25px;
+}
+.font{
+    vertical-align: middle;
+    color: #BDBDBD;
+    font-size: 12px;
+}
+.nonInput{
+    background-position: 0 0 ;
+}
+.faster{
+    background-position: -27px 0px;
+}
+.safe{
+    background-position: -54px 0px;
+}
+/*登录*/
+.login_style button{
+    width: 200px;
+    height: 35px;
+    margin: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: red;
+}
+
+/*登录表单的底部qq微信*/
+.bottom{
+    margin-top: -65px;
+    border-top: 1px solid #bdbdbd;
+    background: #fcfcfc;
+    line-height: 50px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+.qq{
+    display: inline-block;
+    background: url(../images/MyHome/login/QQ-weixin.png) no-repeat 0px 0px;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+.bottom a{
+    font-size: 12px;
+    vertical-align: middle;
+}
+.bottom span{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #DCDCDC;
+}
+/*微信*/
+.WeChat{
+    display: inline-block;
+    background: url(../images/MyHome/login/QQ-weixin.png) no-repeat -20px 0px;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+/*立即注册*/
+.register{
+    display: inline-block;
+    background: url(../images/MyHome/login/login-icons.png) no-repeat -100px -71px;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+.register a{
+    color: red!important;
+    vertical-align: middle;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+/*登录界面*//*结束*/
+
+/*首页轮播*/
+/*图片轮播*/
+section#silder {
+    margin-top: 2px;
+}
+/*图片轮播-列表元素样式设置*/
+section#silder ul {
+    list-style: none;
+    position: relative;
+	width: 600px;
+    height: 800px;
+	padding:0;
+	margin:0;
+}
+/*图片轮播-列表选项元素样式设置*/
+section#silder li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 520px;
+    height: 350px;
+	float: left;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+/*图片轮播-图片样式设置*/
+section#silder img {
+    width: 123%;
+    height: 106%;
+}
+/*图片轮播-隐藏效果设置*/
+.hide {
+    display: none;
+}
+
+/*首页-底部关于我*/
+.bottom_cont{
+    /*width: 100%;*/
+    height: 1200px;
+    font-family: Arial;
+    padding: 10px;
+}
+/* 伪图像 */
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+.bottom_cont h3{
+    /*margin-left:-200px;*/
+    text-align: left;
+    margin-top:-60px;
+}
+.bottom_cont a{
+    /*margin-left:-200px;*/
+    text-align: center;
+    margin-top:-50px;
+    font-size: 18px;
+
+}
+.bottom_1{
+    width: 10%;
+    float: left;
+    margin-left: 50px;
+}
+.bottom_2{
+    float: right;
+    width: 68%;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.bottom_3{
+    float: right;
+    width: 68%;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+
+.bottom_1 img,.bottom_2 img,.bottom_3 img{
+    width: 260px;
+   height: 200px;
+}
+.bottom_1 p,.bottom_2 p,.bottom_3 p{
+    font-size: 18px;
+    /*letter-spacing:2px;*/
+    line-height:5px;
+    text-align: center;
+    width: 250px;
+}
+.x{
+    text-indent: 2em;
+    text-align: left;
+
+}
+
+/*照片墙字体效果-霓虹灯css3*/
+#font_neon {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-shadow: 
+        0 0 10px #fff, 
+        0 0 20px #fff, 
+        0 0 30px #fff, 
+        0 0 40px #6AB5FF, 
+        0 0 70px #6AB5FF, 
+        0 0 80px #6AB5FF, 
+        0 0 100px #6AB5FF, 
+        0 0 150px #6AB5FF;
+}
+/*照片墙*-用到css3*/
+/*照片墙css开始*/
+.gallery {
+    margin: 50px auto 0;
+    width: 840px;
+}
+.gallery a {
+    display: inline-block;
+    height: 135px;
+    margin: 10px;
+    opacity: 1;
+    position: relative;
+    width: 180px;
+
+    -khtml-user-drag: element;
+
+    /* CSS3 Prevent selections */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.gallery a img {
+    border: 8px solid #fff;
+    border-bottom: 20px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+    /* CSS3 Box sizing property */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 Box Shadow */
+    -moz-box-shadow: 2px 2px 4px #444;
+    -webkit-box-shadow: 2px 2px 4px #444;
+    -o-box-shadow: 2px 2px 4px #444;
+    box-shadow: 2px 2px 4px #444;
+}
+
+/* Custom CSS3 rotate transformation */
+.gallery a:nth-child(1) img {
+    -moz-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+.gallery a:nth-child(2) img {
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.gallery a:nth-child(3) img {
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+.gallery a:nth-child(4) img {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.gallery a:nth-child(5) img {
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.gallery a:nth-child(6) img {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.gallery a:nth-child(7) img {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.gallery a:nth-child(8) img {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.gallery a:nth-child(9) img {
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+.gallery a:nth-child(10) img {
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.gallery a:nth-child(11) img {
+    -moz-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+.gallery a:nth-child(12) img {
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.gallery a:hover img {
+    z-index: 5;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 transform rules */
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.gallery a.hidden {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    width: 0;
+}
+.albums {
+   /* margin: 40px auto 0;*/
+    overflow: hidden;
+    width: 840px;
+    margin-left: 100px;
+    margin-top: -30px;
+}
+.album {
+    border: 3px dashed #ccc;
+    float: left;
+    margin: 10px;
+    min-height: 100px;
+    padding: 10px;
+    width: 220px;
+
+    /* CSS3转换规则 */
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+}
+.album a {
+    display: inline-block;
+    height: 56px;
+    margin: 15px;
+    opacity: 1;
+    position: relative;
+    width: 75px;
+
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+     /*CSS3 Prevent selections */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.album a img {
+    border: 4px solid #fff;
+    border-bottom: 10px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+    /* CSS3 Box sizing property */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 Box Shadow */
+    -moz-box-shadow: 2px 2px 4px #444;
+    -webkit-box-shadow: 2px 2px 4px #444;
+    -o-box-shadow: 2px 2px 4px #444;
+    box-shadow: 2px 2px 4px #444;
+}
+/*照片墙css结束*/
+
+/*音乐*/
+.div_music div{
+	text-align:center;
+	margin:10px;
+}
+
+#CDimage img{
+	border-radius:50%;
+}
+
+.div_music img{
+	border:0px;
+}
+
+.div_music button{
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
+/*视频*/
+/*设置视频播放界面样式*/
+#course {
+    width: 640px;
+    background-color: white;
+    margin: auto;
+    text-align: left;
+    box-shadow: 10px 10px 15px black;
+}
+/*设置列表总样式*/
+
+#course ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: -10px;
+}
+/*设置视频标题样式*/
+
+#course h3 {
+    text-align: center;
+}
+/*设置视频大纲目录样式*/
+
+#course li span {
+    line-height: 40px;
+    height: 40px;
+    padding: 0;
+}
+/*设置鼠标悬浮于列表选项时的样式*/
+
+#course li:hover {
+    color: red;
+}
+/*设置图标样式*/
+
+#course img {
+    vertical-align: bottom;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/*小游戏*/
+.game{
+    width:560px;
+    margin:5px auto;
+}
+
+/*心情语录*/ 
+/*div与标题h3样式*/
+.MyLog div{
+	margin:50px auto;
+	text-align:center;
+}
+/*文本输入框样式*/
+.MyLog textarea{
+	width:95%;
+	height:200px;
+	text-indent:2em;
+	text-align:left;
+}
+/*按钮样式*/
+.MyLog button{
+	width:170px;
+	height:30px;
+	margin:10px 0;
+}
+/*表格总体样式*/
+.MyLog table{
+    width:95%;
+	margin:auto;	
+}
+/*单元格样式*/
+.MyLog td{
+	text-align:left;
+	vertical-align:center;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>心情语录</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/MyLog.js"></script>
+</head>
+<body onload="getHistory()">
+	<div id="container">
+		<div id="header">
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="MyPhoto.html">照片墙</a></li>
+                <li><a href="MyMusicVideo.html">足球世界杯</a></li>
+                <li><a href="MyGame.html">小游戏</a></li>
+                <li><a href="MyLog.html">心情语录</a></li>
+            </ul><hr/>
+        </div>
+	    <div class="MyLog">
+            <!--记日志的文本框和相关按钮-->
+            <div id="font_neon">我的心情语录</div>
+            <div>
+                <!--日志记录框-->
+                <textarea id="diary"></textarea>
+                <br />
+                <!--保存和删除按钮-->
+                <button onclick="saveDiary()">保存日志</button>
+                <button onclick="clearDiary()">删除全部日志</button>
+            </div>
+
+            <!--显示日志历史记录-->
+            <div>
+                <table border="1">
+                    <caption>历史记录</caption>
+                    <tr>
+            	        <th>序号</th><th>日志内容</th>
+            	        <th>保存时间</th><th>操作</th>
+                    </tr>
+                    <tbody id="history"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

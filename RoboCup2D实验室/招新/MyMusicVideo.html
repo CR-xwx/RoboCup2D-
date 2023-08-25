@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>足球世界杯</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="MyPhoto.html">照片墙</a></li>
+                <li><a href="MyMusicVideo.html">现实足球</a></li>
+                <li><a href="MyGame.html">小游戏</a></li>
+                <li><a href="MyLog.html">心情语录</a></li>
+            </ul><hr/>
+        </div>
+
+        <!--视频-->
+        <h2>你是怀念18年的夏天，还是18年的人</h2>
+        <div id="course">
+            <!--创建视频播放窗口-->
+            <video id="screen" width="640" src="images/MyMusicVideo/video/18世界杯.mp4" controls>
+                对不起，您的浏览器不支持HTML5视频。
+            </video>
+            <!--课程大纲列表-->
+            <ul>
+                <li onclick="playCourse(60)">
+                    <img src="images/MyMusicVideo/course/play.png" />
+                    <span>18年世界杯集锦</span>
+                </li>
+            </ul>
+        </div>
+        <hr />
+
+        <h2>足球春晚，你上你也行</h2>
+        <div id="course">
+            <!--创建视频播放窗口-->
+            <video id="screen" width="640" src="images/MyMusicVideo/video/搞笑足球.mp4" controls>
+                对不起，您的浏览器不支持HTML5视频。
+            </video>
+            <!--课程大纲列表-->
+            <ul>
+                <li onclick="playCourse(60)">
+                    <img src="images/MyMusicVideo/course/play.png" />
+                    <span>足球版R星精品</span>
+                </li>
+            </ul>
+        </div>
+</body>
+</html>

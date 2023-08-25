@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>照片墙</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<style type="xwx">
+		*{
+            margin:0px;
+            padding:0px;
+        }
+        /* 触发弹窗图片的样式 */
+        .myImg {
+            margin: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            float: left;
+            max-height: 130px;
+        }
+
+        /* 弹窗的位置和背景颜色 */
+        .modal {
+            display: none;
+            position: fixed; /* 绝对定位 */
+            z-index: 1; /* 元素置前 */
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* 溢出出现滚动条 */
+        }
+
+        /* 弹窗图片的大小 */
+        .content {
+            margin: auto;
+            display: block;
+            min-height:500px;
+            max-height:600px;
+        }
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="MyPhoto.html">照片墙</a></li>
+                <li><a href="MyMusicVideo.html">足球世界杯</a></li>
+                <li><a href="MyGame.html">小游戏</a></li>
+                <li><a href="MyLog.html">心情语录</a></li>
+            </ul><hr/>
+        </div>
+        <div id="font_neon">欢迎来到照片墙，请给以下图片进行分类：</div>
+        <div class="albums">
+            <div class="album" id="drop_1" droppable="true"><h3>游戏照</h3></div>
+            <div class="album" id="drop_2" droppable="true"><h3>足球照</h3></div>
+            <div class="album" id="drop_3" droppable="true"><h3>风景照</h3></div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="gallery">
+            <a id="1" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/1.jpg" onclick="demo('Img1')"></a>
+			<div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+				<!-- 弹窗内容 -->
+				<img class="content1" id="img01">
+			</div>
+			<!--相应图片点击操作-->
+			<script>
+				function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+			</script>
+            <a id="2" draggable="true"><img loading="lazy" id="Img2" class="myImg" src="images/MyPhoto/2.jpg" onclick="demo('Img2')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img02">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img02").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="3" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/3.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="4" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/4.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="5" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/5.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="6" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/6.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="7" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/7.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="8" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/8.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="9" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/9.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="10" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/10.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+            <a id="11" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/11.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script> <a id="12" draggable="true"><img loading="lazy" id="Img1" class="myImg" src="images/MyPhoto/12.jpg" onclick="demo('Img1')"></a>
+            <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                <!-- 弹窗内容 -->
+                <img class="content" id="img01">
+            </div>
+            <!--相应图片点击操作-->
+            <script>
+                function demo(imgId) {
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById("img01").src = document.getElementById(imgId).src;
+                }
+            </script>
+
+        </div>
+    </div> 
+    <script src="js/MyPhoto.js"></script>   
+</body>
+</html>

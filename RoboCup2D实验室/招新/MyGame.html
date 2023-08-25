@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onkeydown="doKeyDown(event)">
+	<div id="container">
+		<div id="header">
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="MyPhoto.html">照片墙</a></li>
+                <li><a href="MyMusicVideo.html">足球世界杯</a></li>
+                <li><a href="MyGame.html">小游戏</a></li>
+                <li><a href="MyLog.html">心情语录</a></li>
+            </ul><hr/>
+        </div>
+		<div class="game">
+            <canvas id="canvas" width="560" height="560"></canvas>
+            <div id="msg"></div>
+            <input type="button" value="上一关" onClick="NextLevel(-1)">
+            <input type="button" value="下一关" onClick="NextLevel(1)">
+            <input type="button" value="重玩本关" onClick="NextLevel(0)">
+            <input type="button" value="游戏说明" onClick="showHelp()">
+        </div>	
+    </div>
+    <script src="js/mapdata100.js"></script>
+    <script src="js/MyGame.js"></script>
+<div style="text-align:center;clear:both">
+</body>
+</html>

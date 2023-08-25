@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于个人网站调查问卷</title>
+	<link rel="stylesheet" href="css/ＭyQuestionnaire.css">
+	<script src="js/ＭyQuestionnaire.js"></script>
+</head>
+<body>
+	<div id="questionnaire">
+            <!--页面标题-->
+            <h1>关于 HTML5 的问卷调查</h1>  
+            <p>为了解合肥大学学生（含毕业生）对HTML5前端技术的熟知程度，特设计本调查问卷。</p>
+            <p>期望您百忙之中抽空填写，谢谢！&nbsp;&nbsp;&nbsp;&nbsp;点击返回：<a href="index.html">首页</a></p>
+            <!--水平线-->
+            <hr />
+            <!--表单-->
+            <form method="post" action="URL" onsubmit="return check()">
+                <ol>
+                    <li>您是本校哪一级计算机专业学生？</li>
+                    <label>
+                        <input type="radio" name="q1" value="q1_1" required />
+                        18级 </label>
+                    <label>
+                        <input type="radio" name="q1" value="q1_2" required />
+                        19级 </label>
+                    <label>
+                        <input type="radio" name="q1" value="q1_3" required />
+                        20级 </label>
+                    <label>
+                        <input type="radio" name="q1" value="q1_4" required />
+                        21级 </label>
+                    <label>
+                        <input type="radio" name="q1" value="q1_5" required />
+                        22级 </label>
+
+                    <li>您的性别是？</li>
+                    <label>
+                        <input type="radio" name="q2" value="q2_1" required />
+                        男 </label>
+                    <label>
+                        <input type="radio" name="q2" value="q2_2" required />
+                        女 </label>
+
+                    <li>若你是计算机专业毕业生，请问您目前从事的工作岗位是什么？</li>
+                    <label>
+                        <input type="radio" name="q3" value="q3_1" required />
+                        网页设计与制作 </label>
+                    <label>
+                        <input type="radio" name="q3" value="q3_2" required />
+                        网站开发与维护 </label>
+                    <label>
+                        <input type="radio" name="q3" value="q3_3" required />
+                        网页美工 </label>
+                    <label>
+                        <input type="radio" name="q3" value="q3_4" required />
+                        游戏开发 </label>
+                    <label>
+                        <input type="radio" name="q3" value="q3_5" required />
+                        其他 </label>
+
+                    <li>您了解HTML5吗？</li>
+                    <label>
+                        <input type="radio" name="q4" value="q4_1" required />
+                        知道 </label>
+                    <label>
+                        <input type="radio" name="q4" value="q4_2" required />
+                        不知道 </label>
+
+                    <li>您是否想去学习并使用HTML5这种新的语言？</li>
+                    <label>
+                        <input type="radio" name="q5" value="q5_1" required />
+                        想 </label>
+                    <label>
+                        <input type="radio" name="q5" value="q5_2" required />
+                        不想 </label>
+
+                    <li>您看好HTML5的哪些优势？【可多选】</li>
+                    <label>
+                        <input type="checkbox" name="q6" value="q6_1" />
+                        多设备，跨平台 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q6" value="q6_2" />
+                        自适应网页设计 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q6" value="q6_3" />
+                        即时更新 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q6" value="q6_4" />
+                        可以给站点带来更多的多媒体元素 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q6" value="q6_5" />
+                        可以更好的代替flash和silverlight </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q6" value="q6_6" />
+                        提高可用性和改进用户的友好体验 </label>
+                    
+
+                    <li>您最不喜欢HTML5的哪些漏洞？【可多选】</li>
+                    <label>
+                        <input type="checkbox" name="q7" value="q7_1" />
+                        点击劫持更变得更加容易 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q7" value="q7_2" />
+                        利于跨域请求或WebSockets的端口扫描 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q7" value="q7_3" />
+                        利用桌面通知做社会工程学攻击 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q7" value="q7_4" />
+                        利用地理定位追踪受害者 </label>
+                    <br />
+                    <label>
+                    <input type="checkbox" name="q7" value="q7_5" />
+                    表单篡改（泄露用户信息） </label>
+
+                    <li>您在网页设计动画方面使用了哪些工具？【可多选】</li>
+                    <label>
+                        <input type="checkbox" name="q8" value="q8_1" />
+                        Flash </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q8" value="q8_2" />
+                        Silverlight </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q8" value="q8_3" />
+                        HTML5 </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q8" value="q8_4" />
+                        Dream weaver </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q8" value="q8_5" />
+                        VS </label>
+                    <br />
+                    <label>
+                        <input type="checkbox" name="q8" value="q8_6" />
+                        其他 </label>
+
+                    <li>短期内您是更趋向于用HTML5这种新语言还是更趋向于使用您习惯的工具？</li>
+                    <label>
+                        <input type="radio" name="q9" value="q4_1" required />
+                        学习HTML5 </label>
+                    <label>
+                        <input type="radio" name="q9" value="q4_2" required />
+                        用自己习惯的工具 </label>
+                    <li>您觉得它将在多久以后发展为主流并将flash和silverlight淘汰？</li>
+                    <label>
+                        <input type="radio" name="q9" value="q9_1" required />
+                        1年 </label>
+                    <label>
+                        <input type="radio" name="q9" value="q9_2" required />
+                        2-3年 </label>
+                    <label>
+                        <input type="radio" name="q9" value="q9_3" required />
+                        3-10年 </label>
+                    <label>
+                        <input type="radio" name="q9" value="q9_4" required />
+                        10年以上 </label>
+
+                    <li>您觉得HTML5的发展前景好吗？</li>
+                    <label>
+                        <input type="radio" name="q10" value="q10_1" required />
+                        较好 </label>
+                    <label>
+                        <input type="radio" name="q10" value="q10_2" required />
+                        很好 </label>
+                    <label>
+                        <input type="radio" name="q10" value="q10_3" required />
+                        不好 </label>          
+                </ol>
+				
+				<label>您的姓名
+                    <input type="text"  name="name" required />
+                </label>
+                <label>您的专业
+                    <input type="text" name="position" required />
+                </label>
+                <label>联系电话
+                    <input type="tel" name="tel" required />
+                </label>
+				
+				 <div id="btn">
+                    <button type="submit"><a>提交问卷</button>
+                </div>
+            </form>
+        </div>
+</body>
+</html>

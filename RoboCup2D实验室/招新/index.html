@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="MyPhoto.html">照片墙</a></li>
+                <li><a href="MyMusicVideo.html">足球世界杯</a></li>
+                <li><a href="MyGame.html">小游戏</a></li>
+                <li><a href="MyLog.html">心情语录</a></li>
+            </ul><hr/>
+        </div>
+        <header class="header_a"><p style="margin-left: 700px;" >登陆前请先填：<a href="ＭyQuestionnaire.html" target="_blank">调查问卷</a></p></header>
+        <div class="login_content">   
+            <section id="silder">
+                <ul>
+                    <li>
+                        <img src="images/MyHome/silder/1.jpg"/>
+                    </li>
+                    <li class="hide">
+                        <img src="images/MyHome/silder/2.jpg" />
+                    </li>
+                    <li class="hide">
+                        <img src="images/MyHome/silder/3.jpg" />
+                   </li>
+                </ul>
+            </section>
+            <div class="wrapper background">
+                <!--登录表单-->
+                <div class="login-form right">
+                    <!--扫码登录-->
+                    <div class="login-tab login-tab-left left" id="saomaTab" >
+                        <a>扫码登录</a>
+                            <span class="right">|</span>
+                    </div>
+                    <!--账号登陆-->
+                    <div class="login-tab login-tab-right left" id="accountNumTab" >
+                    <a>账户登录</a>
+                    </div>
+                    <!--账户登录的内容项-->
+                    <div class="accountNum-login" id="accountNum-content">
+                        <div id="accountNum">
+                            <label class="login-label login-rentou" for="name"></label>
+                            <input type="text" class="name" id="name" placeholder="邮箱/用户名/已验证手机"/>
+                        </div>
+                        <div id="l_password">
+                            <label class="login-label login-l_password" for="password"></label>
+                            <input type="text" class="name" id="password" placeholder="密码"/>
+                        </div>
+                        <div class="login_style">
+                            <a class="right forget">忘记密码</a>
+                        <!-- <input type="submit" class="signIn" value="登录"/> -->
+                            <button><a href="#">登录</a></button>
+                        </div>
+                    </div>
+
+                    <!--扫码登录的内容项-->
+                    <div class="saoma-login" id="saomiao-content">
+                        <div class="saoma-login-top">
+                            <img src="images/MyHome/login/code.png" class="erweima left" id="erweima"/>
+                            <img src="images/MyHome/login/phone-orange.png" class="phone left" id="phone"/>
+                        </div>
+                        <div class="saoma-login-bottom">
+                            <span class="one">打开<a>手机</a>&nbsp;&nbsp;扫描二维码快速登录</span>
+                            <ul class="saomiao_bottom">
+                                <li>
+                                    <span class="saoma-span nonInput"></span>
+                                    <span class="font">免输入</span>
+                                    <span class="saoma-span faster"></span>
+                                    <span class="font">更快</span>
+                                    <span class="saoma-span safe"></span>
+                                    <span class="font">更安全</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--底部的微信qq标志-->
+                    <div class="bottom">
+                        <label class="qq"></label>
+                        <a>QQ</a>
+                        <span>|</span>
+                        <label class="WeChat"></label>
+                        <a>微信</a>
+                        <div class="registerzhuce right">
+                            <i class="register"></i>
+                            <a a href="#">立即注册</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="bottom_cont">
+        <h3> &nbsp>> 关于我们</h3>
+           <div class="row">
+               <div class="leftcolumn">
+                   <div class="card">
+                       <h2>RoboCup2D</h2>
+                       <div class="fakeimg" >
+                           <img style="width:100%" src="./images/MyHome/wo/first.jpg" alt="">
+                       </div>
+                       <p class="x"> 在机器人世界杯官方网站的首页上有着这么一句话：“到2050年，培养一支全自主人形的，可以战胜人类世界足球冠军的机器人球队。”这
+                           是机器人世界杯提出的终极目标，虽然这是一个宏伟的目标，但机器人世界杯为的不只是实现这一目标。在实现的过程中，产生新的研究挑战
+                           并取得的相关成就， 推动促进相关技术也是机器人世界杯的目的之一.</p>
+                       <p class="x">RBOCUP2D是一个机器人足球比赛平台，它是基于RoboCup规则和标准而开发的。RoboCup是一个国际性的机器人足球比赛和研究项目，
+                           旨在推动人工智能和机器人技术的发展。 RBOCUP2D使用一个二维仿真环境，模拟真实足球比赛的场景。参赛的机器人团队需要设计和开发自主决策的智能代理程序，
+                           使其能够在比赛中与其他机器人进行合作和竞争。 比赛中的机器人需要具备感知、规划和执行等能力。它们需要通过分析场地上的数据来感知球的位置、其他机器人的
+                           位置和动作，然后根据这些信息来做出决策和执行动作。 RBOCUP2D提供了一个测试机器人智能算法的平台，研究人员可以在这个仿真环境中进行实验和调试，以提高机
+                           器人的性能和决策能力。 通过参与RBOCUP2D比赛，机器人团队能够借助竞争和合作的方式，推动机器人技术的进步，并为实际应用场景的机器人开发提供重要的实验基础</p>
+                   </div>
+                   <div class="card">
+                       <h2>MT</h2>
+                       <div class="fakeimg" style="height:200px;">Image</div>
+                       <p class="x">  合肥学院MT机器人足球团队成立于2012年5月，球队的队员之间通过不断的传承和多年不断的尝试与探索，形成了我们队伍独有的提法，取得了不凡的的成绩，团队成
+                           员也在不断的成长和进步。我们球队每年都会积极参加国内外各项机器人足球相关赛事，包括中国公开赛、伊朗公开赛、葡萄牙公开赛和Robucup世界杯等各类赛事，
+                           近年来主要成绩包括：2016年葡萄牙公开赛中获得冠军，2018年RoboCup2D世界杯中获得第三名，2019年的RoboCup2D世界杯中获得第五名，连续五届进入RoboCup世
+                           界杯仿真2D组的八强等。 这些比赛涉及到人工智能、机器人学、通讯、传感等诸多领域的前沿研究和技术集成。我们球队每个队员都极强的钻研精神，善于攻克难关，通过大量训练、
+                           测试和日志数据挖掘发现球队的不足，积极优化球队代码 </p>
+                       <p class="x"> MT球队从成立至今，我们一直在尝试优化算法，丰富打法和调整进攻防守的策率，以使球队动作变得更加的高效，整体协作更加智能。为此，我们尝试了很多方法，他们有的很不错
+                           ，有的却很糟糕，还有更多的挑战在等待着我们，我们将继续投入大量精力深入地研究RoboCup2D。我们期待与来自世界各地的优秀球队一起交流合作，共同进步，同时祝愿RoboCup2D越来越好.
+
+                       </p>
+                   </div>
+               </div>
+      </div>
+        <p>
+        	<script>
+        		//当前图片序号
+                var index = 0;
+                $(document).ready(function() {
+                    setInterval("next()", 3000);
+                });
+
+                //切换下一张图片
+                function next() {
+                    //当前图片淡出
+                    $("section#silder li:eq(" + index + ")").fadeOut(1500);
+                    //判断当前图片是否为最后一张
+                    if (index == 2)
+                        //如果是最后一张，序号跳转到第一张
+                        index = 0;
+                    else
+                        //否则图片序号自增1
+                        index++;
+                    //新图片淡入
+                    $("section#silder li:eq(" + index + ")").fadeIn(1500);
+                }
+        	</script>
+        </p>
+    </div>
+    <script src="js/MyHome.js"></script>
+    <h2></h2>
+    <!--音乐文件的载入-->
+    <audio id="audio" src="images/MyMusicVideo/music/We Are One (Ole Ola).mp3" preload>
+        浏览器不支持HTML5音频播放！
+    </audio>
+    <div class="div_music">
+        <!--音量调节进度条-->
+        <div>
+            <input id="volume" type="range" min="0" max="1" step="0.1"  onchange="setVolume()" />
+        </div>
+        <!--显示歌曲名称-->
+        <div>
+            当前正在播放: <span id="title">We Are One (Ole Ola)</span>
+        </div>
+
+        <!--音乐播放器按钮-->
+        <div class="music_box">
+            <button onclick="lastMusic()"><img src="images/MyMusicVideo/previous.png" width="50" height="50"/>
+            </button>
+            <button id="toggleBtn" onclick="toggleMusic()"><img src="images/MyMusicVideo/play.png" width="50" height="50"/>
+            </button>
+            <button onclick="nextMusic()"><img src="images/MyMusicVideo/next.png" width="50" height="50"/>
+            </button>
+        </div>
+    </div>
+    </div>
+    <script src="js/MyMusicVideo.js"></script>
+</body>
+</html>
